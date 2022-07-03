@@ -12,7 +12,7 @@ function App() {
 
     Axios.get("https://api.coinstats.app/public/v1/coins")
       .then(res => setCoinList(res.data.coins))
-      console.log(coinList)
+      
   }, [])
 
   const searchedCoin = coinList.filter(coin => {
